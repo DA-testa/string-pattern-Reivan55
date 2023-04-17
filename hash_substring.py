@@ -1,19 +1,16 @@
-# python3
-import os
-
 def read_input():
     input_type = input().rstrip()
 
     if input_type == 'F':
-        pattern = "aba"
-        text = "abacaba"
+       
+        pattern = input().rstrip()
+        
+        text = input().rstrip()
     else:
         pattern = input().rstrip()
         text = input().rstrip()
 
     return (pattern, text)
-
-
 
 def print_occurrences(output):
     print(' '.join(map(str, output)))
@@ -54,5 +51,4 @@ def get_occurrences(pattern, text):
 
 if __name__ == '__main__':
     print_occurrences(get_occurrences(*read_input()))
-
 
