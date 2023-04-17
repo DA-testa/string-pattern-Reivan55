@@ -5,9 +5,8 @@ def read_input():
     input_type = input().rstrip()
 
     if input_type == 'F':
-        with open("sample_file.txt", "r") as f:
-            pattern = f.readline().rstrip()
-            text = f.readline().rstrip()
+        pattern = "aba"
+        text = "abacaba"
     else:
         pattern = input().rstrip()
         text = input().rstrip()
