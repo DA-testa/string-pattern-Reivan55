@@ -2,9 +2,8 @@ def read_input():
     input_type = input().rstrip()
 
     if input_type == 'F':
-       
-        pattern = input().rstrip()
         
+        pattern = input().rstrip()
         text = input().rstrip()
     else:
         pattern = input().rstrip()
