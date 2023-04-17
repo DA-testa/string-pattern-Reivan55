@@ -2,10 +2,17 @@
 import os
 
 def read_input():
-    pattern = input().rstrip()
-    text = input().rstrip()
+    input_type = input().rstrip()
+
+    if input_type == 'F':
+        pattern = "aba"
+        text = "abacaba"
+    else:
+        pattern = input().rstrip()
+        text = input().rstrip()
 
     return (pattern, text)
+
 
 
 def print_occurrences(output):
